@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="portfolio.css">
     <title>MISΛKI</title>
@@ -19,15 +19,15 @@
                     <h1>/LG/</h1>
                     <nav id="nav" class="">
                         <ul id="links">
-                            <li><a href="#start" class="selected">START</a></li>
-                            <li><a href="#aboutme">ABOUT ME</a></li>
-                            <li><a href="#services">SERVICES</a></li>
-                            <li><a href="#portfolio">PORTFOLIO</a></li>
-                            <li><a href="#contact">CONTACT</a></li>
+                            <li><a href="#start" class="selected" onclick="selectlink(this)">START</a></li>
+                            <li><a href="#aboutme" onclick="selectlink(this)">ABOUT ME</a></li>
+                            <li><a href="#services" onclick="selectlink(this)">SERVICES</a></li>
+                            <li><a href="#projects" onclick="selectlink(this)">PROJECTS</a></li>
+                            <li><a href="#contact" onclick="selectlink(this)">CONTACT</a></li>
                         </ul>
                     </nav>
 
-                    <div id="icon-nav">
+                    <div id="icon-nav" onclick="responsiveMenu()">
                         <i class="fa-solid fa-bars"></i>
                     </div>
 
@@ -51,7 +51,7 @@
     <!-- About Me Page -->
     <section id="aboutme">
         <div class="content-img">
-            <img src="test/chibimoon.jpg" alt="">
+            <img src="img/chibimoon.jpg" alt="">
         </div>
         <div class="aboutme">
             <p class="title"> About Me</p>
@@ -182,12 +182,12 @@
         
     </div>
     <!-- My Portfolio -->
-    <section id="portfolio">
+    <section id="projects">
         <h3 class="title-section">MY PROJECTS</h3>
         <div class="fil">
             <div class="project">
                 <div class="overlay"></div>
-                <img src="/test/airplane.jpeg">
+                <img src="img/airplane.jpeg">
                 <div class="info">
                     <h4>Project's Description</h4>
                     <p>Web Design</p>
@@ -196,7 +196,7 @@
 
             <div class="project">
                 <div class="overlay"></div>
-                <img src="/test/airplane.jpeg">
+                <img src="img/airplane.jpeg">
                 <div class="info">
                     <h4>Project's Description</h4>
                     <p>Web Design</p>
@@ -205,7 +205,7 @@
 
             <div class="project">
                 <div class="overlay"></div>
-                <img src="/test/airplane.jpeg">
+                <img src="img/airplane.jpeg">
                 <div class="info">
                     <h4>Project's Description</h4>
                     <p>Web Design</p>
@@ -214,7 +214,7 @@
 
             <div class="project">
                 <div class="overlay"></div>
-                <img src="/test/airplane.jpeg">
+                <img src="img/airplane.jpeg">
                 <div class="info">
                     <h4>Project's Description</h4>
                     <p>Web Design</p>
@@ -225,7 +225,7 @@
         <div class="fil">
             <div class="project">
                 <div class="overlay"></div>
-                <img src="/test/airplane.jpeg">
+                <img src="img/airplane.jpeg">
                 <div class="info">
                     <h4>Project's Description</h4>
                     <p>Web Design</p>
@@ -234,7 +234,7 @@
 
             <div class="project">
                 <div class="overlay"></div>
-                <img src="/test/airplane.jpeg">
+                <img src="img/airplane.jpeg">
                 <div class="info">
                     <h4>Project's Description</h4>
                     <p>Web Design</p>
@@ -243,7 +243,7 @@
 
             <div class="project">
                 <div class="overlay"></div>
-                <img src="/test/airplane.jpeg">
+                <img src="img/airplane.jpeg">
                 <div class="info">
                     <h4>Project's Description</h4>
                     <p>Web Design</p>
@@ -252,7 +252,7 @@
 
             <div class="project">
                 <div class="overlay"></div>
-                <img src="/test/airplane.jpeg">
+                <img src="img/airplane.jpeg">
                 <div class="info">
                     <h4>Project's Description</h4>
                     <p>Web Design</p>
@@ -261,7 +261,36 @@
 
         </div>
     </section>
-
+    <!-- My Contact -->
+    <section id="contact">
+        <h3 class="title-section">Contact Me Now</h3>
+        <div class="form-container">
+            <form action="">
+                <div class="half-row">
+                    <input type="text" placeholder="Full Name" class="half-input">
+                    <input type="text" placeholder="Email" class="half-input">
+                </div>
+                <div class="row">
+                    <input type="text" placeholder="Theme..." class="full-input">
+                </div>
+                <div class="row">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Your message ..." class="full-input"></textarea>
+                </div>
+                <input type="submit" value="Send Message" class="btn-send">
+            </form>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <p>All rights reserved - 2022</p>
+        <div class="networks">
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitch"></i></a> 
+            <a href="#"><i class="fa-brands fa-discord"></i></a> 
+        </div>
+    </footer> 
     <script src="portfolio.js"></script>
 </body>
 
