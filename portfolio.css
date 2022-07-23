@@ -150,20 +150,23 @@ html {
 }
 /* About Me */
 
-#aboutme{
-  /* background: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)); */
-  background: linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.1)), url("img/me.jpeg");
-  /* background-color: #feec78; */
-  background-size: cover;
-  /* background-size: 500px; */
+#aboutme {
+  /* background: linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.1)), url("img/me.jpeg");
+  background-size: 1000px;
+  background-color: #d3bf97;
   background-repeat: no-repeat;
-  /* background-attachment: fixed; */
-  background-position: center center;
+  background-position: right bottom; */
   /* max-width: 1100px; */
   margin: auto;
   padding: 100px 15px;
   color: black; 
   display: flex;
+
+  background: url(img/kon.gif);
+  background-color: #e1cda5;
+  background-repeat: no-repeat;
+  background-size: 420px;
+  background-position: right bottom;
 }
 
 #aboutme .content-img {
@@ -236,13 +239,23 @@ letter-spacing: 2px;
 #services {
   /* background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(/test/the.jpeg); */
   /* background: url(/test/nighty.jpeg); */
-  background-color: #e5dfd3;
   /* background-color: var(--back); */
   /* background-attachment: fixed; */
+  /* background-color: #e5dfd3;
   background-repeat: no-repeat;
   background-size: cover;
   background-size: 100%;
+  background-position: center center; */
+
+  background: url(img/cofee\ cat.jpg);
+  background-color: #e5dfd3;
+  /* background-color: var(--back); */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 500px;
   background-position: center center;
+
   padding: 100px 15px;
   text-align: center;
   /* background-color: var(--lightyellow); */
@@ -312,10 +325,8 @@ letter-spacing: 2px;
 /* SKILLS */
 
 .skillcontainer {
-  /* background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(/test/the.jpeg); */
   background: url(img/cofee\ cat.jpg);
   background-color: #e5dfd3;
-  /* background-color: var(--back); */
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -416,6 +427,11 @@ letter-spacing: 2px;
 /* PROJECTS */
 
 #projects {
+  background: url(img/face.gif);
+  background-repeat: no-repeat;
+  background-size: 130px;
+  background-position: right top; 
+
   max-width: 1100px;
   padding: 100px 0;
   margin: auto;
@@ -477,6 +493,11 @@ letter-spacing: 2px;
 /* Contact */
 
 #contact {
+  background: url(img/cutie.gif);
+  background-repeat: no-repeat;
+  background-size: 180px;
+  background-position: bottom right;
+  background-color: #e1cda5;  
   padding: 100px 15px;
 }
 
@@ -541,10 +562,10 @@ letter-spacing: 2px;
  /* Footer */
 
  footer{
-   background-color: grey;
-   color: black;
+   background-color: black;
+   color: white;
    text-align: center;
-   padding: 30px 0; 
+   padding: 20px 0; 
  }
 
 footer a{

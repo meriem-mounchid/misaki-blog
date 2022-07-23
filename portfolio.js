@@ -22,18 +22,18 @@ function selectlink(link){
     x.className = "";
 }
 
-//scrolling
-/*window.onscroll = function(){
-    effectskills()
-};
+// scrolling
+// window.onscroll = function(){
+//     effectskills()
+// };
 
-function effectskills(){
-    var skills = document.getElementById("skills");
-    var dist = window.innerHeight - skills.getBoundingClientRect().top;
-    if (dist >= 300) {
-        document.getElementById("html").classList.add(percentage1);
-        document.getElementById("k8s").classList.add(percentage2);
-        document.getElementById("docker").classList.add(percentage3);
-        document.getElementById("shell").classList.add(percentage4);
-    }
-}*/
+// function effectskills(){
+//     var skills = document.getElementById("skills");
+//     var dist = window.innerHeight - skills.getBoundingClientRect().top;
+//     if (dist >= 300) {
+//         document.getElementById("html").classList.add(percentage1);
+//         document.getElementById("k8s").classList.add(percentage2);
+//         document.getElementById("docker").classList.add(percentage3);
+//         document.getElementById("shell").classList.add(percentage4);
+//     }
+// }
